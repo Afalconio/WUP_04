@@ -72,12 +72,13 @@ summary(model1)
 A P-value of less than 0.05 indicates that there is a significant difference in the data between people with varying levels of degrees with certain comparisons in regards to the WORDSUM test results.
 
 ```{r include=TRUE,echo=FALSE}
-par(mar = c(3, 8.7, 2, 2))
+par(mar = c(3, 16, 2, 2))
 plot(TukeyHSD(model1,conf.level = 0.99),las=2)
 ```
 
-
+The TukeyHSD plot shows that there is a significant difference in the scores of the WORDSUM test between LT high school and a graduate level degree. There is also a significant difference between a school level degree and a graduate level degree. Both of these comparisons show a significant difference due to their intervals not containing the value of 0 as all the other group comparisons in the plot show. A 99% confidence level was also used to make sure that the results were stricter as a lower confidence level wouldn't have shown the lack of the value 0 in the intervals for lt high school and graduate as well as high school and graduate comparisons.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+The dataset includes the numerical variable WORDSUM and the character variable DEGREE which are compared to show a relationship between the two. The data shown from the boxplot shows that higher level degrees correlated with higher test scores for the WORDSUM test. This was also shown numerically with favstats as the mean and median of the degrees increased in value with each level of degree increasing. the one-way anova test showed that the p-value was <0.05 which showed a significant diferrence in the data between degrees so a TukeyHSD plot was used with a 99% confidence interval to see a significant difference between degree groups. There was a difference found in the WORDSUM scores between the less than a high school degree group and the graduate degree group. There was also a difference found in the WORDSUM scores between a high school degree and a graduate degree. There wasn't a significant difference among the other degree comparisons.
