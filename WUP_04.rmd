@@ -51,7 +51,7 @@ stat_boxplot( geom = 'errorbar' ) +
 labs ( x = "DEGREE" , y = "WORDSUM SCORE" , title = "WORDSUM EXPLAINED BY DEGREE") +
 theme ( plot.title = element_text (hjust = 0.5, size = 16))
 ```
-
+The Boxplot indicates that the highest ranges, medians, and means for the WORDSUM scores are all among Graduate, Bachelor, and Junior College degrees. LT high school and high school degrees appear to have lower scores in regards to the WORDSUM test. There are some outliers with two graduate level degree scores being lower then its range, and one lt high school WORDSUM test result higher than the range of the lt high school degree in the data.
 
 ### Numerical Descriptive Results
 
